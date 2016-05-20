@@ -541,32 +541,6 @@ A fun project with friends
 						<hr>
 						<h4>If you want to contact me, here we go</h4>
 					</div>
-
-					<?php
-						if (isset($_POST['contact_name']) && isset($_POST['contact_subject']) && isset($_POST['contact_email']) && isset($_POST['contact_text'])){
-							$contact_name = $_POST['contact_name'];
-							$contact_email = $_POST['contact_email'];
-							$contact_text = $_POST['contact_text'];
-							$contact_subject = $_POST['contact_subject'];
-							if (!empty($contact_text) && !empty($contact_subject) && !empty($contact_email) && !empty($contact_name)){
-								$to = 'jiaoliguo@yahoo.co.nz';
-								$subject = $contact_subject;
-								$content = $contact_name."\n".$contact_text;
-								$headers = 'From:'.$contact_email;
-								if (mail($to, $subject, $content, $headers)){
-									$message = 'send to Liguo Jiao';
-									echo "<script type='text/javascript'>alert('$message');</script>";
-								}
-								else{
-									$message = 'Sorry, an error occurred, please try again.';
-									echo "<script type='text/javascript'>alert('$message');</script>";
-								}
-							} else {
-								$message = 'Please fill up all information';
-								echo "<script type='text/javascript'>alert('$message');</script>";
-							}
-						}
-					?>
 					<form action="index.php" method="post" role="form">
 						<div class="col-md-4 col-sm-4 wow fadeIn" data-wow-delay="0.3s">
 							<input style="background:#FFFFFF; color:black" type="text" name="contact_name" placeholder="Name" class="form-control">
