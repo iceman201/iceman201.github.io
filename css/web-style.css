@@ -562,6 +562,11 @@ h3.about-title {
 #contact .form-control
     {
         background: transparent;
+        border-radius: 0px;
+        box-shadow: none;
+        /*border: 0px solid #CCC;*/
+        margin-bottom: 20px;
+        transition: all 0.4s ease-in-out;
         text-align: center;
         
         transition: all 1.4s ease-in-out;
