@@ -73,6 +73,12 @@ h4
         text-align: center;
         padding-bottom: 50px;
     }
+
+h5 {
+        text-align: center;
+        font-size: 10px;
+        color: #fbf000;
+    }
 /* end h4 */
 .btn {
     background: transparent;
@@ -556,20 +562,25 @@ h3.about-title {
 #contact .form-control
     {
         background: transparent;
-        border-radius: 0px;
-        box-shadow: none;
-        /*border: 0px solid #CCC;*/
-        margin-bottom: 20px;
-        transition: all 0.4s ease-in-out;
-    }
-#contact .submit1
-    {
-        height: 50px;
-        width: 100%;
-        position:relative;
+        text-align: center;
         
-        bottom:30%;
+        transition: all 1.4s ease-in-out;
     }
+#contact h1
+    {
+        text-align: center;
+        font-size: 50px;
+        color: #e8b5f2;
+        transition: all 1.4s ease-in-out;
+    }
+#contact h3
+    {
+        text-align: center;
+        font-size: 35px;
+        color:#cffd4c;
+        transition: all 1.7s ease-in-out;
+    }
+
 #contact input
     {
         height: 50px;
