@@ -40,9 +40,11 @@ video {
 	z-index:-1;
 }
 video.fillWidth {
-	width: 100%;
-    top:-30%;
-    left:0%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
 }
     
     
@@ -429,6 +431,11 @@ h3.about-title {
         color: #55acee;
         font-size: 20px;
         font-weight: bold;        
+    }
+#about .about-wrapper h5
+    {
+        color: #266e6f;
+        font-size: 15px;     
     }
 /* end about */
 
