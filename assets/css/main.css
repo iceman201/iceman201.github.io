@@ -183,16 +183,34 @@ a:active {
 
    =========================*/
 
+section {
+  min-height: 100vh !important;
+  height: auto !important;
+}
+
+section#work {
+  display: flex;
+  flex-direction: column;
+}
+
 #work .showcase {
+  flex-grow: 1;
   width: 100%;
   padding: 0px;
+  margin-top: -25px;
+  padding-top: 3rem;
+}
 
-   }
+#work footer.arrow-container {
+  height: 100px;
+  position: relative;
+}
 
 .showcase-tiles {
   padding-top: 0px;
   margin-top: 0px;
-  display: table-row; }
+  display: table-row;
+}
 
 .showcase-title h2 {
     font-size: 30px;
@@ -201,6 +219,7 @@ a:active {
 
 .showcase-paragraph {
   margin: auto;
+  height: auto;
   width: 70%;
   text-align: justify;
 }
@@ -229,16 +248,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
 }
-.showcase,
-.footer-block {
-  height: 390px;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  margin-top: -195px; }
-.footer-block {
-  height: 180px;
-  margin-top: -90px; }
+
 
 /* =========================
 
