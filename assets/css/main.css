@@ -165,6 +165,9 @@ a:active {
 #work {
   background: #3498db; }
 
+#employment {
+  background: rebeccapurple; }
+
 #networks {
   background: #474e5d; }
 
@@ -188,22 +191,27 @@ section {
   height: auto !important;
 }
 
-section#work {
+section.flex {
   display: flex;
   flex-direction: column;
 }
 
-#work .showcase {
-  flex-grow: 1;
+.flex .showcase {
   width: 100%;
   padding: 0px;
   margin-top: -25px;
   padding-top: 3rem;
 }
 
-#work footer.arrow-container {
+.flex footer.arrow-container {
   height: 100px;
+  flex-grow: 1;
   position: relative;
+}
+
+.flex::before {
+  content: '';
+  flex-grow: 1;
 }
 
 .showcase-tiles {
@@ -221,7 +229,7 @@ section#work {
   margin: auto;
   height: auto;
   width: 70%;
-  text-align: justify;
+  text-align: left;
 }
 .showcase-paragraph span
 {
