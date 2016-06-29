@@ -59,7 +59,7 @@
 	</section>
 
 	<section id="employment" class="flex">
-		<div class="showcase">
+		<div class="history">
 			Loading...
 		</div>
 		<footer class="arrow-container">
@@ -68,9 +68,25 @@
 	</section>
 
 	<script type="text/markdown" id="employment-src">
-## Experience
-*  dasfasfafasdfasdfasfsafasdfas sad fas f alksdjfl;asdjf l;aksdj flaj sd;lfja sld f dl asdlf;ajslfdj alj lajs ;dfjasljk djlfajksd ;lasdj fljkd falsjd f;lsaj dlaskjdf lasdjflk ads;lf sadlf as;l fa lsflkas;lkfaldlf al sl;d fla sjfl; jaslkdf lkd sla ;ls jfl;asj dflj sdlf jalsjflcjvuhaiwuhuihwhiuv xcjkvlb an dfinuiwe
-	</div>
+<h1 class="history-title">Experience</h1>
+
+### McKay Limited [ 09/09/2015 － Now ］
+* iOS Developer
+	*  Developing and maintaining iOS applications used worldwide. Experienced in iOS SDK such as **Parse**, **Realm**, **POP Animation**, **Spring Animation**, **Alamofire**, **Core Motion**, **Core Graphic**.
+		*  `SCADAFarm` iOS Application
+		*  `RefitPlanner` iOS Application
+		*  `SideWinder` iOS Applications
+	*  iOS applications testing, and setup error handling.
+	*  UI/UX Design.
+
+### University of Canterbury [ 25/01/2015 － 31/08/2015 ]
+* ICT Services Department Technician
+	* Assisting students with IT account queries, provide IT support in the Central Library.
+	* University server maintenance. 
+	* Provide support and guidance relating to software packages used in the ITS workrooms.
+* ICT Services Department Hardware Assistant (Part-Time)
+	* Hardware equipment/device testing and maintenance.
+
 	</script>
 	
 	<section id="networks">
@@ -103,8 +119,10 @@
     <script src="assets/js/site-ck.js"></script>
     <script src="assets/js/marked.min.js"></script>
     <script>
-    	marked.setOptions({ smartypants: true })
-    	$('#employment .showcase').html(marked($('script#employment-src').html()))
+    	marked.setOptions({
+    		smartypants: true
+    	})
+    	$('#employment .history').html(marked($('script#employment-src').text()))
     </script>
   </body>
 </html>
