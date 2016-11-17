@@ -15,10 +15,10 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-  
+
   /* =========================
 
-    GENERAL STYLES 
+    GENERAL STYLES
 
    =========================*/
 *, *:before, *:after {
@@ -26,8 +26,6 @@ hr {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: none; }
-img 
-  {
-    width: 296px;
-  }
+
+
 }
